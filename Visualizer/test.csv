@@ -1,0 +1,54 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Assignee Id,Reporter,Reporter Id,Priority,Status,Resolution,Created,Updated,Due date,Resolved,Custom field (Story Points)
+Task,UWAFT-4523,381194,Alex/Sam - Check ROS latency,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-11-02 16:46,2022-11-03 13:22,,,4
+Task,UWAFT-4522,381191,Alex/Sam - Prepare for testing on the tank,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-11-02 16:45,2022-11-03 13:22,,,2
+Task,UWAFT-4521,381156,Outline running and evaluating simulation,Nathee Thiensirisak,606c6a36f8e4770068518e30,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Backlog,,2022-11-02 15:48,2022-11-03 16:00,,,2
+Task,UWAFT-4520,381154,Outline sensor fusion algo vs raw data processing,Lokesh Patel,612f7ab9f0bf52006948942d,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Backlog,,2022-11-02 15:47,2022-11-03 16:00,,,2
+Task,UWAFT-4519,381152,Interfacing with simulators,Hasan Khan,612f7d5d0f8ff40068d3e178,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Backlog,,2022-11-02 15:46,2022-11-03 16:01,,,2
+Task,UWAFT-4518,381151,Identify dependencies,,,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Backlog,,2022-11-02 15:46,2022-11-03 16:01,,,2
+Task,UWAFT-4517,381149,Determine how to import files,,,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Backlog,,2022-11-02 15:45,2022-11-03 16:01,,,2
+Task,UWAFT-4496,373535,Soyazhe/Ben - Determine which existing vehicle model to use,Nathee Thiensirisak,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-26 14:23,2022-11-03 10:44,,2022-11-03 10:42,5
+Task,UWAFT-4485,372290,R&D on state estimation,Lokesh Patel,612f7ab9f0bf52006948942d,Lokesh Patel,612f7ab9f0bf52006948942d,Low,In Progress,,2022-10-24 10:58,2022-11-03 17:34,,,8
+Task,UWAFT-4483,372288,Alex/Sam - Verify ROS publisher,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-24 10:57,2022-11-03 13:19,,,4
+Task,UWAFT-4471,371071,Ben - Determine disturbances,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:48,2022-11-03 10:48,,,5
+Story,UWAFT-4467,371067,Determine Controller Model Type,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:45,2022-11-02 19:30,,,
+Story,UWAFT-4460,371059,Basic Scenario Setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:27,2022-11-01 15:51,,,
+Story,UWAFT-4459,371058,Tool Sim Selection,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:27,2022-11-03 11:22,,,
+Task,UWAFT-4455,371054,Ben C. - Document ego vehicle parameters,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:22,2022-11-03 11:14,,,4
+Task,UWAFT-4454,371053,Ben C. - Document sensor adjustments/setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:22,2022-11-03 11:14,,,4
+Task,UWAFT-4453,371052,Ariel - Environment setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:21,2022-11-03 11:14,,,2
+Story,UWAFT-4450,371045,Data Retrieval,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:10,2022-11-03 11:14,,,
+Story,UWAFT-4449,371044,Deliverable 1 - CAV Tool Check,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:10,2022-11-03 11:15,,,
+Story,UWAFT-4448,371043,Functional Sim Environment,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:09,2022-11-03 11:12,,,
+Story,UWAFT-4447,371041,Systems/Tools Setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:08,2022-11-02 19:30,,,
+Story,UWAFT-4446,371040,CI/CD,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:07,2022-11-02 19:30,,,
+Task,UWAFT-4442,371000,Soyazhe - Research possible controllers,Nathee Thiensirisak,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Medium,Done,Done,2022-10-19 17:02,2022-11-03 10:42,,2022-11-03 10:41,5
+Task,UWAFT-4441,370999,Ben S.- Determine vehicle I/O,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,In Progress,,2022-10-19 17:01,2022-11-03 10:44,,,3
+Task,UWAFT-4440,370998,Create VCS,John Francis Marrone,61d0485de67ea2006ba2e42e,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-19 17:01,2022-11-03 10:46,,2022-11-03 10:46,1
+Task,UWAFT-4437,370993,Collect data required for tool check,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:44,2022-11-01 15:50,,,
+Task,UWAFT-4433,370986,Ask about? - Collect drive scenarios,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:40,2022-11-01 15:53,,,
+Task,UWAFT-4432,370984,Ask about? - Adjust scenario parameters based on tool check requirements and document this,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:39,2022-11-01 15:53,,,
+Task,UWAFT-4431,370983,Define and create scenario to demonstrate basic capabilities,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:39,2022-11-01 15:50,,,
+Task,UWAFT-4430,370982,"Install and run tool, document process on Confluence",Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:37,2022-11-02 19:30,,,2
+Task,UWAFT-4429,370981,Choose tool and version,Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:37,2022-11-02 19:30,,,2
+Task,UWAFT-4428,370980,Requirements coverage analysis,Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:37,2022-11-02 19:30,,,3
+Task,UWAFT-4427,370979,R&D different options out there,Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 16:36,2022-11-03 11:22,,,5
+Task,UWAFT-4414,370924,Compare frameworks in fusion algo vs raw data,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 15:38,2022-10-19 22:39,,,
+Task,UWAFT-4413,370923,R&D on data association,Nathee Thiensirisak,606c6a36f8e4770068518e30,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 15:38,2022-11-07 14:59,,,
+Task,UWAFT-4412,370920,Write section of report,Nathee Thiensirisak,606c6a36f8e4770068518e30,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 15:34,2022-11-01 15:59,,,3
+Task,UWAFT-4409,370894,Varun - Determine options for interfacing with simulator,,,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Backlog,,2022-10-19 15:05,2022-11-03 16:00,,,2
+Task,UWAFT-4405,370875,Ariel - Define test scenarios,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:44,2022-11-03 11:13,,,2
+Task,UWAFT-4404,370874,Ariel - Individual elements write-up,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:44,2022-11-03 11:15,,,2
+Task,UWAFT-4403,370872,Ariel - Investigate features,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:44,2022-11-03 11:12,,,2
+Task,UWAFT-4402,370871,Ariel - Environment setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:43,2022-11-03 11:12,,,2
+Task,UWAFT-4399,370865,Install CARLA,Nathee Thiensirisak,606c6a36f8e4770068518e30,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:41,2022-11-03 10:58,,,5
+Task,UWAFT-4397,370857,Node testing familiarity,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:34,2022-11-02 10:33,,,6
+Task,UWAFT-4396,370855,CI/CD v2 - regular build checks,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:33,2022-11-02 10:27,,,8
+Task,UWAFT-4395,370853,Docker documentation,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:32,2022-11-02 10:32,,,5
+Task,UWAFT-4378,370509,Develop Tests for Longitudinal Vehicle Model,Daniel Kang,612f7c6e9976c3006942a0cc,Aryan Gosalia,606cc66b3a516300765cc30c,Medium,Backlog,,2022-10-18 22:48,2022-11-02 19:31,,,2
+Task,UWAFT-4374,370505,MPC Planning + Research,Dew Bhaumik,612f7a8cae44ae0070bb44ae,Aryan Gosalia,606cc66b3a516300765cc30c,Medium,Under Review (migrated),,2022-10-18 22:33,2022-11-02 19:30,,,5
+Task,UWAFT-4371,370500,Plan Skeleton,Aryan Gosalia,606cc66b3a516300765cc30c,Aryan Gosalia,606cc66b3a516300765cc30c,Medium,Backlog,,2022-10-18 22:15,2022-11-02 19:30,,,4
+Task,UWAFT-4338,365498,Create stories/tickets for epic,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-03 17:44,2022-10-21 16:05,,,3
+Task,UWAFT-4337,365497,Create stories/tickets for epic,Nathee Thiensirisak,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,High,Done,Done,2022-10-03 17:44,2022-10-21 16:05,,2022-10-19 23:05,3
+Task,UWAFT-4289,360666,Test can_tx_rx node in HIL,Nathee Thiensirisak,606c6a36f8e4770068518e30,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,In Progress,,2022-09-22 16:02,2022-11-03 13:21,,,3
+Task,UWAFT-4286,351729,ACC Longitudinal Model: Initial Research,Daniel Kang,612f7c6e9976c3006942a0cc,Aryan Gosalia,606cc66b3a516300765cc30c,High,Backlog,,2022-09-20 20:04,2022-11-02 19:31,2022-09-25 0:00,,3
+Task,UWAFT-4162,344875,Return Oxts,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,shfernan@uwaterloo.ca,6155f63478e5e400702add5d,High,In Progress,,2022-07-25 10:49,2022-10-21 16:05,,,2
