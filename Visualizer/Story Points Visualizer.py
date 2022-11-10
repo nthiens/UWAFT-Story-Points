@@ -7,7 +7,8 @@
 ## Change test.csv into the file you are using
 file_name = "test.csv"
 ## Set x to "1" to see story points or set x to "2" to see number of tasks completed
-x = 2
+## or set x to "3" to see the burndown rate
+x = 1
 
 ########################################################################################################
 ########################################################################################################
@@ -31,7 +32,7 @@ new_people2 = []
 
 for people2 in new_people:
     if (people2 != "") and (people2 != "Assignee"):
-        new_people2 = new_people2 + [[people2 ,0,0,0,0]]
+        new_people2 = new_people2 + [[people2 ,0,0,0,0,0]]
         
 
 ## print(new_people2)
@@ -40,7 +41,8 @@ def update_info(name, pri, sp):
     ## print(f"Done by {name} with priority {pri} and {sp} story points!")
     for each_person in new_people2:
         if each_person[0] == name:
-            each_person[1] = each_person[1] + int(sp)
+            each_person[1] = each_person[1] + sp
+            each_person[5] = each_person[5] + sp
             if (pri == "Low"):
                 each_person[2] = each_person[2] + 1
             if (pri == "Medium"):
@@ -49,6 +51,11 @@ def update_info(name, pri, sp):
                 each_person[4] = each_person[4] + 1
     return None
 
+def update_total(nm, pr, st):
+    for each_person in new_people2:
+        if each_person[0] == nm:
+            each_person[5] = each_person[5] + st
+
 with open(file_name) as csv_file:
     reader = csv.reader(csv_file)
     for row in reader:
@@ -56,13 +63,34 @@ with open(file_name) as csv_file:
         priority = row[8]
         resolution = row[10]
         story = row[15]
-        if (resolution == "Done") and (assignee != ""):
-            update_info(assignee,priority,story)
+        i_type = row[0]
+        if (resolution == "Done") and (assignee != "") and (i_type != "Issue Type"):
+            if story == "":
+                update_info(assignee,priority,0) 
+            else:
+                update_info(assignee,priority,float(story)) 
+        if (resolution == "") and (assignee != "") and (i_type != "Issue Type"):
+            if story == "":
+                update_total(assignee,priority,0) 
+            else:
+                update_total(assignee,priority,float(story)) 
 
 def sort_by_sp(lop):
     return lop[1]
 
 new_people2.sort(key=sort_by_sp, reverse=True)
+
+
+def burn_down(lop):
+    for ppl in lop:
+        if (ppl[5] == 0) or (ppl[5] == "0") or (ppl[5] == 0.0) or (ppl[5] == "0.0"):
+            ppl[5] = 0
+        else:
+            ppl[5] = 100 * (ppl[1]/ppl[5])
+
+
+burn_down(new_people2)
+#print(new_people2)
 
 
 ## Datset
@@ -85,7 +113,31 @@ for mp in new_people2:
 hi_priority = []
 for hp in new_people2:
     hi_priority = hi_priority + [int(hp[4])]
-##
+
+total_sp = []
+for tsp in new_people2:
+    total_sp = total_sp + [int(tsp[5])]
+
+#print(total_sp)
+
+new_list = new_people2.copy()
+#print(new_list)
+
+
+def sorter(lop):
+    return lop[5]
+
+new_list.sort(key=sorter, reverse=True)
+
+yourname = []
+for yn in new_list:
+    yourname = yourname + [yn[0]]
+
+tester = []
+for t in new_list:
+    tester = tester + [t[5]]
+#print(yourname)
+#print(tester)
 
 if x == 1:
     fig, ax = plt.subplots(figsize =(14, 8))
@@ -131,4 +183,19 @@ if x == 2:
     plt.xticks(ind+width, names)
     plt.xticks(rotation=20)
     plt.legend( (bar1, bar2, bar3), ('Low Priority', 'Medium Priority', 'High Priority') )
+    plt.show()
+
+if x == 3:
+    plt.figure(figsize=(12,8))
+    colors_list = ["Red"]
+    graph = plt.bar(yourname, tester, color = colors_list)
+    plt.title('Burndown Rate')
+    plt.xlabel("Assignees")
+    plt.ylabel('Percentage')
+    plt.xticks(rotation=20)
+    for x,y in zip(yourname, tester):
+
+        label = "{:.2f}".format(y)
+
+        plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha="center")
     plt.show()
