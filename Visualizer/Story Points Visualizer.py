@@ -6,17 +6,31 @@
 
 ## Change test.csv into the file you are using
 file_name = "test.csv"
+
 ## Set x to "1" to see story points or set x to "2" to see number of tasks completed
 ## or set x to "3" to see the burndown rate
 x = 1
 
-########################################################################################################
-########################################################################################################
+## Add names to this list to exclude them from metrics
+remove_people = ["Sachin Fernando", "Nathee Thiensirisak"]
 
+########################################################################################################
+########################################################################################################
 
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
+
+def remove_from_list(remove, lis):
+    lis_new = lis.copy()
+
+    for a in remove:
+        for b in lis_new:
+            if (b[0] == a):
+                lis_new.remove(b)
+            #print(lis_new)
+
+    return lis_new
 
 people = []
 
@@ -92,35 +106,36 @@ def burn_down(lop):
 burn_down(new_people2)
 #print(new_people2)
 
+new_people3 = remove_from_list(remove_people, new_people2)
 
 ## Datset
 names = []
-for name in new_people2:
+for name in new_people3:
     names = names + [name[0]]
 
 story_points = []
-for story in new_people2:
+for story in new_people3:
     story_points = story_points + [int(story[1])]
 
 low_priority = []
-for lp in new_people2:
+for lp in new_people3:
     low_priority = low_priority + [int(lp[2])]
 
 med_priority = []
-for mp in new_people2:
+for mp in new_people3:
     med_priority = med_priority + [int(mp[3])]
 
 hi_priority = []
-for hp in new_people2:
+for hp in new_people3:
     hi_priority = hi_priority + [int(hp[4])]
 
 total_sp = []
-for tsp in new_people2:
+for tsp in new_people3:
     total_sp = total_sp + [int(tsp[5])]
 
 #print(total_sp)
 
-new_list = new_people2.copy()
+new_list = new_people3.copy()
 #print(new_list)
 
 
@@ -168,7 +183,7 @@ if x == 1:
     plt.show()
 
 if x == 2:
-    N = len(new_people2)
+    N = len(new_people3)
     ind = np.arange(N)
     width = 0.25
     
@@ -187,7 +202,7 @@ if x == 2:
 
 if x == 3:
     plt.figure(figsize=(12,8))
-    colors_list = ["Red"]
+    colors_list = ["Blue"]
     graph = plt.bar(yourname, tester, color = colors_list)
     plt.title('Burndown Rate')
     plt.xlabel("Assignees")
