@@ -14,12 +14,32 @@ x = 1
 ## Add names to this list to exclude them from metrics
 remove_people = ["Sachin Fernando", "Nathee Thiensirisak"]
 
+## If the assignee on Jira is in the title, put the assignee(s) inside angle brackets <>
+## If angle brackets exist in the title AND there is an assignee, the assignee will take precedence
+
+## For one assignee
+## ex: <Ben Clayton> Determine Distubances
+
+## For more than one assignee
+## ex2: <Ben C. & Alex J.> Tool Sim Selection
+## ex3: <Alex/Sam> Install CARLA
+
 ########################################################################################################
 ########################################################################################################
 
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
+
+
+def extract_name(title):
+    ext_name = ""
+    counter = 0
+    while title[counter] != ">":
+        ext_name = ext_name + title[counter]
+        counter = counter + 1
+    counter = 0
+    return (ext_name[1:])
 
 def remove_from_list(remove, lis):
     lis_new = lis.copy()
@@ -37,8 +57,16 @@ people = []
 with open(file_name) as csv_file:
     reader = csv.reader(csv_file)
     for row in reader:
+        title = row[3]
         assignee = row[4]
-        people = people + [assignee]
+        
+        if (title[0] == "<") and (assignee == ""):
+            row[4] = extract_name(row[3])
+            people = people + [row[4]]
+        else:
+            people = people + [assignee]
+        #print(people)
+
 
 
 new_people = list(set(people))
@@ -49,7 +77,7 @@ for people2 in new_people:
         new_people2 = new_people2 + [[people2 ,0,0,0,0,0]]
         
 
-## print(new_people2)
+#print(new_people2)
 
 def update_info(name, pri, sp):
     ## print(f"Done by {name} with priority {pri} and {sp} story points!")
@@ -73,21 +101,48 @@ def update_total(nm, pr, st):
 with open(file_name) as csv_file:
     reader = csv.reader(csv_file)
     for row in reader:
+        title = row[3]
         assignee = row[4]
         priority = row[8]
         resolution = row[10]
         story = row[15]
         i_type = row[0]
-        if (resolution == "Done") and (assignee != "") and (i_type != "Issue Type"):
+
+        #print(title[0])
+        #print(assignee)
+
+        if (title[0] == "<") and (assignee == ""):
+            #print('hi')
+            row[4] = extract_name(row[3])
+            #print(row[4])
+
+        #print(row)
+        #print(resolution, row[4], i_type)
+
+        i = row[4]
+        #print(i)
+
+        #print(new_people2)
+        #print(resolution, assignee, i_type)
+
+        if (resolution == "Done") and (i_type != "Issue Type"):
+            update_info(i,priority,float(story)) 
+            #print(i, "is awesome")
+        elif (resolution == "Done") and (assignee != "") and (i_type != "Issue Type"):
+            #print("did0")
             if story == "":
+                #print("did 1")
                 update_info(assignee,priority,0) 
             else:
                 update_info(assignee,priority,float(story)) 
+                #print("did2")
         if (resolution == "") and (assignee != "") and (i_type != "Issue Type"):
             if story == "":
                 update_total(assignee,priority,0) 
+                #print("did3")
             else:
                 update_total(assignee,priority,float(story)) 
+                #print("did4")
 
 def sort_by_sp(lop):
     return lop[1]
