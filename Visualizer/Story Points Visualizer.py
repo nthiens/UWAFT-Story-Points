@@ -2,14 +2,17 @@
 ########################################################################################################
 
 ## Make sure to select "Columns", then tick off Story Points. Then export to Excel CSV (my defaults)
-## Go to command line and enter "pip install matplotlib"
+## Go to command line and enter "pip install matplotlib" 
 
 ## Change test.csv into the file you are using
-file_name = "test.csv"
+file_name = "test2.csv"
 
-## Set x to "1" to see story points or set x to "2" to see number of tasks completed
-## or set x to "3" to see the burndown rate
-x = 1
+## Set x to "1" to see story points 
+## Set x to "2" to see number of tasks completed. Only tasks with
+##      priority "Lowest", "Low", "Medium", "High", and "Highest"
+##      will be shown
+## Set x to "3" to see the burndown rate
+x = 3
 
 ## Add names to this list to exclude them from metrics
 remove_people = ["Sachin Fernando", "Nathee Thiensirisak"]
@@ -30,7 +33,6 @@ remove_people = ["Sachin Fernando", "Nathee Thiensirisak"]
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
-
 
 def extract_name(title):
     ext_name = ""
@@ -85,11 +87,11 @@ def update_info(name, pri, sp):
         if each_person[0] == name:
             each_person[1] = each_person[1] + sp
             each_person[5] = each_person[5] + sp
-            if (pri == "Low"):
+            if (pri == "Low") or (pri == "Lowest"):
                 each_person[2] = each_person[2] + 1
             if (pri == "Medium"):
                 each_person[3] = each_person[3] + 1
-            if (pri == "High"):
+            if (pri == "High") or (pri == "Highest"):
                 each_person[4] = each_person[4] + 1
     return None
 
@@ -237,35 +239,51 @@ if x == 1:
     plt.title("Sprint Statistics")
     plt.show()
 
+
 if x == 2:
-    N = len(new_people3)
-    ind = np.arange(N)
-    width = 0.25
+    x = names
+    low_priority = np.array(low_priority)
+    med_priority = np.array(med_priority)
+    hi_priority = np.array(hi_priority)
+
+    plt.xlabel("Tasks Completed")
+    plt.ylabel("Assignee")
+    plt.title("Task Priority Completion")
+
+    plt.barh(x, low_priority, color="g")
+    plt.barh(x, med_priority, left=low_priority, color="yellow")
+    plt.barh(x, hi_priority, left=low_priority+med_priority, color="r")
     
-    bar1 = plt.bar(ind, low_priority, width, color = 'g')
-    bar2 = plt.bar(ind+width, med_priority, width, color='y')
-    bar3 = plt.bar(ind+width*2, hi_priority, width, color = 'r')
+    plt.legend(['Low Priority', 'Medium Priority', "High Priority"])
+    
 
-    plt.xlabel("Assignees")
-    plt.ylabel('Tasks Completed')
-    plt.title("Task Priorities")
-
-    plt.xticks(ind+width, names)
-    plt.xticks(rotation=20)
-    plt.legend( (bar1, bar2, bar3), ('Low Priority', 'Medium Priority', 'High Priority') )
     plt.show()
 
 if x == 3:
-    plt.figure(figsize=(12,8))
-    colors_list = ["Blue"]
-    graph = plt.bar(yourname, tester, color = colors_list)
+    fig, ax = plt.subplots(figsize =(14, 8))
+    ax.barh(yourname, tester)
+    for s in ['top', 'bottom', 'left', 'right']:
+        ax.spines[s].set_visible(False)
+    
+    ax.xaxis.set_ticks_position('none')
+    ax.yaxis.set_ticks_position('none')
+    ax.xaxis.set_tick_params(pad = 5)
+    ax.yaxis.set_tick_params(pad = 10)
+    
+    ax.grid(b = True, color ='grey',
+            linestyle ='-.', linewidth = 0.5,
+            alpha = 0.2)
+            
+    ax.invert_yaxis()
+    
+    for i in ax.patches:
+        plt.text(i.get_width()+0.2, i.get_y()+0.5,
+         str(round((i.get_width()), 2)),
+         fontsize = 10, fontweight ='bold',
+         color ='grey')
+         
+    plt.ylabel("Assignees")
+    plt.xlabel("Percentage")
     plt.title('Burndown Rate')
-    plt.xlabel("Assignees")
-    plt.ylabel('Percentage')
-    plt.xticks(rotation=20)
-    for x,y in zip(yourname, tester):
-
-        label = "{:.2f}".format(y)
-
-        plt.annotate(label, (x,y), textcoords="offset points", xytext=(0,10), ha="center")
     plt.show()
+
