@@ -1,0 +1,42 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Assignee Id,Reporter,Reporter Id,Priority,Status,Resolution,Created,Updated,Due date,Resolved,Custom field (Story Points)
+Task,UWAFT-4496,373535,<Soyazhe/Ben> - Determine which existing vehicle model to use,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-26 14:23,2022-11-03 10:44,,2022-11-03 10:42,5
+Task,UWAFT-4484,372289,<Alex/Sam> - Visualize lidar data using veloview,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-24 10:58,2022-11-02 16:22,,2022-11-02 16:22,3
+Task,UWAFT-4483,372288,<Alex/Sam> - Verify ROS publisher,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-24 10:57,2022-11-03 13:19,,,4
+Task,UWAFT-4482,372287,<Sam> - Prepare for benchtop testing,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-24 10:57,2022-11-02 16:22,,2022-11-02 16:22,3
+Task,UWAFT-4479,371479,<Ben C.>- CARLA justification,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Lowest,Done,Done,2022-10-20 17:06,2022-11-02 15:15,,2022-10-31 16:08,1
+Task,UWAFT-4471,371071,<Ben> - Determine disturbances,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:48,2022-11-03 10:48,,,5
+Story,UWAFT-4467,371067,Determine Controller Model Type,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:45,2022-11-02 19:30,,,
+Story,UWAFT-4459,371058,Tool Sim Selection,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:27,2022-11-03 11:22,,,
+Task,UWAFT-4452,371051,<Ben C.>- Sensor/Veh setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-19 22:17,2022-11-02 15:15,,2022-11-01 14:58,4
+Story,UWAFT-4448,371043,Functional Sim Environment,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:09,2022-11-03 11:12,,,
+Story,UWAFT-4447,371041,Systems/Tools Setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:08,2022-11-02 19:30,,,
+Story,UWAFT-4446,371040,CI/CD,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 22:07,2022-11-02 19:30,,,
+Task,UWAFT-4442,371000,<Soyazhe> - Research possible controllers,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-19 17:02,2022-11-03 10:42,,2022-11-03 10:41,5
+Task,UWAFT-4441,370999,<Ben S.>- Determine vehicle I/O,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,In Progress,,2022-10-19 17:01,2022-11-03 10:44,,,3
+Task,UWAFT-4430,370982,"Install and run tool, document process on Confluence",Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Highest,,,2022-10-19 16:37,2022-11-02 19:30,,,2
+Task,UWAFT-4429,370981,Choose tool and version,Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Lowest,Done,Done,2022-10-19 16:37,2022-11-02 19:30,,,2
+Task,UWAFT-4428,370980,Requirements coverage analysis,Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Medium,Done,Done,2022-10-19 16:37,2022-11-02 19:30,,,3
+Task,UWAFT-4427,370979,R&D different options out there,Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Highest,Done,Done,2022-10-19 16:36,2022-11-03 11:22,,,5
+Task,UWAFT-4411,370904,Identify two workflows,Hasan Khan,612f7d5d0f8ff40068d3e178,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Cancelled,Won't Do,2022-10-19 15:13,2022-11-02 14:44,,2022-11-02 14:44,2
+Task,UWAFT-4410,370902,Identify two algorithm environments,Lokesh Patel,612f7ab9f0bf52006948942d,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Done,Done,2022-10-19 15:12,2022-11-01 11:34,,2022-11-01 11:34,2
+Task,UWAFT-4409,370894,<Varun> - Determine options for interfacing with simulator,,,Nathee Thiensirisak,606c6a36f8e4770068518e30,Low,Backlog,,2022-10-19 15:05,2022-11-03 16:00,,,2
+Task,UWAFT-4404,370874,<Ariel> - Individual elements write-up,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:44,2022-11-03 11:15,,,2
+Task,UWAFT-4403,370872,<Ariel> - Investigate features,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:44,2022-11-03 11:12,,,2
+Task,UWAFT-4402,370871,<Ariel> - Environment setup,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:43,2022-11-03 11:12,,,2
+Task,UWAFT-4401,370868,<Ben C.> - How to simulate data,,,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Lowest,Done,Done,2022-10-19 14:43,2022-11-02 15:15,,2022-11-01 14:58,3
+Task,UWAFT-4400,370866,Server Access,Nathee Thiensirisak,606c6a36f8e4770068518e30,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-19 14:42,2022-10-26 18:41,,2022-10-26 10:32,2
+Task,UWAFT-4399,370865,Install CARLA,Nathee Thiensirisak,606c6a36f8e4770068518e30,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Backlog,,2022-10-19 14:41,2022-11-03 10:58,,,5
+Task,UWAFT-4394,370850,Docker used with WATO server,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-19 14:31,2022-11-02 10:31,,2022-10-31 10:52,2
+Task,UWAFT-4391,370688,Select standard ROS/Ubuntu version for LT use,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Cancelled,Won't Do,2022-10-19 10:55,2022-11-02 10:31,,2022-10-24 16:35,1
+Task,UWAFT-4390,370687,Standard IDE Documentation,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-19 10:54,2022-11-02 10:30,2022-11-25 0:00,2022-10-24 15:36,1
+Task,UWAFT-4387,370520,Look Into Adaptive MPC,Aryan Gosalia,606cc66b3a516300765cc30c,Aryan Gosalia,606cc66b3a516300765cc30c,Medium,Backlog,,2022-10-18 23:12,2022-11-02 19:30,,,3
+Task,UWAFT-4378,370509,Develop Tests for Longitudinal Vehicle Model,Daniel Kang,612f7c6e9976c3006942a0cc,Aryan Gosalia,606cc66b3a516300765cc30c,Medium,Backlog,,2022-10-18 22:48,2022-11-02 19:31,,,2
+Task,UWAFT-4374,370505,MPC Planning + Research,Dew Bhaumik,612f7a8cae44ae0070bb44ae,Aryan Gosalia,606cc66b3a516300765cc30c,Medium,Under Review (migrated),,2022-10-18 22:33,2022-11-02 19:30,,,5
+Task,UWAFT-4371,370500,Plan Skeleton,Aryan Gosalia,606cc66b3a516300765cc30c,Aryan Gosalia,606cc66b3a516300765cc30c,Medium,Backlog,,2022-10-18 22:15,2022-11-02 19:30,,,4
+Task,UWAFT-4346,366701,<Sam> - Create stories/tasks for epic,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-06 11:34,2022-11-02 13:55,,2022-11-01 16:23,3
+Task,UWAFT-4331,365491,Create stories/tickets for epic,Aryan Gosalia,606cc66b3a516300765cc30c,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,Done,Done,2022-10-03 17:40,2022-10-21 16:12,,2022-10-19 23:05,2
+Task,UWAFT-4289,360666,Test can_tx_rx node in HIL,Nathee Thiensirisak,606c6a36f8e4770068518e30,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Low,In Progress,,2022-09-22 16:02,2022-11-03 13:21,,,3
+Task,UWAFT-4286,351729,ACC Longitudinal Model: Initial Research,Daniel Kang,612f7c6e9976c3006942a0cc,Aryan Gosalia,606cc66b3a516300765cc30c,High,Backlog,,2022-09-20 20:04,2022-11-02 19:31,2022-09-25 0:00,,3
+Task,UWAFT-4273,350850,ACC Pipeline Plan,Aryan Gosalia,606cc66b3a516300765cc30c,Aryan Gosalia,606cc66b3a516300765cc30c,Highest,Cancelled,Won't Do,2022-09-19 18:35,2022-10-25 13:03,2022-09-25 0:00,2022-10-20 18:12,3
+Task,UWAFT-4268,350192,Setup V0 of CI/CD pipeline in Gitlab,Alvin Li,606cc9e4bc3c3f006f0ff4ce,Sachin Fernando,70121:c7dc453a-7d68-4ad2-9c80-323f12c89edb,Medium,Done,Done,2022-09-18 11:46,2022-11-01 12:26,,2022-10-24 15:18,3
+Task,UWAFT-4134,342734,Document process to access WATO server cluster,Alvin Li,606cc9e4bc3c3f006f0ff4ce,shfernan@uwaterloo.ca,6155f63478e5e400702add5d,Medium,Done,Done,2022-07-18 17:17,2022-11-02 10:30,,2022-10-28 15:24,2
